@@ -49,3 +49,4 @@ while True:
     }
     json_send(to_send)
 
+# flag is crypto{3nc0d3_d3c0d3_3nc0d3}
