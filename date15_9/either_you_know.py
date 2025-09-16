@@ -18,6 +18,6 @@ key = 'myXORkey'
 
 cyp_key = key.encode()
 
-flag = bytes(k ^ c for k, c in zip(cycle(cyp_key) , cap1)).decode()
+flag = bytes(k ^ c for k, c in zip(cycle(cyp_key) , cap1)).decode() # checked AI on how to use cycle 
 
 print(flag)
