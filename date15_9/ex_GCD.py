@@ -20,6 +20,6 @@ q = 32321
 
 g, u, v = extended_gcd(p, q)
 print("gcd:", g)           
-print("u:", u)             
+print("u:", u)            
 print("v:", v)             
 print(p*u + q*v)      # for checking      
