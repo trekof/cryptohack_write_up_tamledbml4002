@@ -59,5 +59,6 @@ inv_shift_rows(state)
 
 # convert back to bytes (the flag)
 flag = matrix2bytes(state)
-print(flag)
+if __name__ == "__main__":
+    print(flag)
 

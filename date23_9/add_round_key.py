@@ -19,7 +19,9 @@ round_key = [
 
 
 def add_round_key(s, k):
+    """XOR the state with the round key"""
     return [[si^ki for si, ki in zip(srow, krow)] for srow,krow in zip(s,k)]
 
-print(matrix2bytes(add_round_key(state, round_key)))
+if __name__ == "__main__":
+    print(matrix2bytes(add_round_key(state, round_key)))
 
