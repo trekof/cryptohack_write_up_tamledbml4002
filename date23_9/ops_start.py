@@ -1,17 +1,9 @@
 from Crypto.Cipher import AES
-from flask import Flask
-import os
-
-chal = Flask(__name__)
 
 
-# KEY = ?
-# FLAG = ?
+KEY = ?
+FLAG = ?
 
-KEY = os.environ.get("AES_KEY", "THIS_IS_16_BYTES").encode()
-FLAG = os.environ.get("FLAG", "CTF{example_flag}")
-
-ciphertext = 'c11949a4a2ecf929dfce48b39daedd9e6d90c67d2f550b79259bdda835348a48'
 
 @chal.route('/block_cipher_starter/decrypt/<ciphertext>/')
 def decrypt(ciphertext):
@@ -32,6 +24,3 @@ def encrypt_flag():
     encrypted = cipher.encrypt(FLAG.encode())
 
     return {"ciphertext": encrypted.hex()}
-
-if __name__ == "__main__":
-    chal.run(port=5000, debug=True)
