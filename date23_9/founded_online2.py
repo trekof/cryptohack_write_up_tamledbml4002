@@ -1,7 +1,7 @@
 from Crypto.Cipher import AES
 import hashlib
-
 import requests
+
 url1 = "http://aes.cryptohack.org/passwords_as_keys/"
 r = requests.get(f"{url1}/encrypt_flag")
 data = r.json()
