@@ -21,7 +21,7 @@ def extended_gcd(a: int, b: int):
     x = y1
     y = x1 - (a // b) * y1
     # now, how will it be = g, for x1*b + y1*(a%b) = g
-    we have : a%b = a-q*b #for q = a//b
+    # we have : a%b = a-q*b #for q = a//b
     # g = x1*b + y1*(a%b)
     #   = x1*b + y1*(a-qb) 
     #   = x1*b + y1*a - y1*q*b
