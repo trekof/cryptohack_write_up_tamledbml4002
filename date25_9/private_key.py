@@ -8,10 +8,10 @@ e = 65537
 m = totient_find(p,q)
 
 def egcd(a: int, b: int):
-    if a == 0:
-        return (b, 0, 1)
-    g, y, x = egcd(b % a, a)
-    return (g, x - (b // a) * y, y)
+    if b == 0:
+        return (a, 1, 0)
+    g, x, y = egcd(b, a%b)
+    return (g, y , x- (a//b)* y)
 
 def modinv(a: int, m: int) -> int:
     g, x, _ = egcd(a, m)
@@ -20,6 +20,6 @@ def modinv(a: int, m: int) -> int:
         return -1
     return x % m
 
-# print(modinv(e, m))
+print(modinv(e, m))
 for i in range(1, 1000, 50):
     print(f"{i} modinv with 65537 = {modinv(i,e)}")

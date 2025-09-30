@@ -1,2 +1,2 @@
-inclass-process: [inclass](https://www.notion.so/ASST-270d0e515c0380e0be41d17cfd17c1be?source=copy_link)
+inclass-process: [inclass](https://www.notion.so/ASST-270d0e515c0380e0be41d17cfd17c1be?source=copy_link) 
 lab-process: [lab](https://www.notion.so/ASST_lab-270d0e515c0380ba9f5ef598357eae22?source=copy_link)

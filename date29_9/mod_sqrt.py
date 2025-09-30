@@ -1,3 +1,7 @@
+from date25_9.totient import (is_prime, 
+                            totient_find)
+from date25_9.private_key import (modinv, egcd)
+
 # Read the file
 with open("output.txt", "r") as f:
     content = f.read()
