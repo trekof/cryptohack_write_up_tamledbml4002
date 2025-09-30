@@ -28,6 +28,7 @@ def modinv(a: int, m: int) -> int:
 # modinv(x) of a mod m is an x that fit:
 #           a*x = 1 (mod m)
 
-print(modinv(e, m))
-for i in range(1, 1000, 50):
-    print(f"{i} modinv with 65537 = {modinv(i,e)}")
+if __name__ == "__main__":
+    print(modinv(e, m))
+    for i in range(1, 1000, 50):
+        print(f"{i} modinv with 65537 = {modinv(i,e)}")
