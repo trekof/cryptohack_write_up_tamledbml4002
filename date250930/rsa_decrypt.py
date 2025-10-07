@@ -1,4 +1,4 @@
-from date25_9 import *
+from date250925 import *
 
 c = 77578995801157823671636298847186723593814843845525223303932
 # dùng đáp án ở phần trước hay nói cách khác là

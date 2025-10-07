@@ -6,6 +6,6 @@ def find_invert(a: int, b: int) -> int:
             return x
         x += 1
         if x == b:  # no inverse found
-            raise ValueError(f"{a} has no inverse modulo {b}")
+            print(f"{a} has no inverse modulo {b}")
         
 print(find_invert(3,13))

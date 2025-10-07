@@ -19,7 +19,7 @@ def legendre_check(a: int, b: int) -> int:
     # print(f"{a} {b} {result}")
     return result
 
-# hàm kiểm tra theo tonelli-shanks
+# hàm kiểm tra theo tonelli-shanks - toàn bộ được tham khảo trên chat gpt sau khi đã tìm hiểu về thuận toán
 def tonelli_shanks(a, p):
     """Tìm x sao cho x^2 ≡ a mod p, với p lẻ và a là quadratic residue"""
     # Kiểm tra a có phải residue không
@@ -57,7 +57,7 @@ def tonelli_shanks(a, p):
             temp = pow(temp, 2, p)
             i += 1
             if i == M:
-                raise Exception("Không tìm thấy i thỏa mãn")
+                print("Không tìm thấy i thỏa mãn")
         # Cập nhật
         b = pow(c, 2**(M-i-1), p)
         R = (R * b) % p

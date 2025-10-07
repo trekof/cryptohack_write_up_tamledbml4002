@@ -47,7 +47,7 @@ def legendre_check(a: int, b: int) -> int:
 
 for i in ints_array:
     if legendre_check(i, p)==1:
-        print("the quad of:")
+        print("the modular square root of:")
         print(i)
         print("and:")
         print(p)
