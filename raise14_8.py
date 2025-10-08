@@ -1,5 +1,7 @@
-from Crypto.Util.number import getPrime, inverse, bytes_to_long, long_to_bytes, GCD
+from Crypto.Util.number import GCD
 from factordb.factordb import FactorDB
+
+# sử dụng brute force khi chưa nghiên cứu để hiểu cách hoạt động của bất kì giải thuật nào hiệu quả
 
 f = FactorDB(461733370363)
 # Connect to the FactorDB API
@@ -25,10 +27,10 @@ b=0
 
 for i in range(1, p):
     if pow(g, i, p) == ga:
-        print("ga = ", i)
+        print("a = ", i)
         a=i
     if pow(g, i, p) == gb:
-        print("gb = ", i)
+        print("b = ", i)
         b=i
     if (a!=0 or b!=0): break
 
@@ -36,3 +38,4 @@ if a==0:
     print(pow(ga,b,p))
 else:
     print(pow(gb,a,p))
+    
