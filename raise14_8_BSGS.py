@@ -41,7 +41,7 @@ def baby_step_giant_step(g, h, p):
     return None  # Không tìm thấy
 
 # ---------------------------
-# 2️⃣ Tìm b bằng BSGS
+# 2️⃣ Tìm a bằng BSGS
 # ---------------------------
 a = baby_step_giant_step(g, ga, p)
 print("a =", a)

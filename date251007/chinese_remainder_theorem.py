@@ -175,7 +175,7 @@ def chinese_remainder(a_list, n_list):
         Ni = N // n           # partial product
         # print(Ni)
         inv = find_invert(Ni % n, n)  # modular inverse
-        # print(inv)
+        # print(inv) as this will make Ni*inv mod n = 1
         result += a * Ni * inv # this will evenly divide Ni but will be a mod n, as all the other will have n in it so it will disapear
         # so when we sum all of them, if we devided any number in the moduli, only the respcective element in the result will give a reminder
         # as all of the other element will give 0

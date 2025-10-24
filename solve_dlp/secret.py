@@ -1,0 +1,1 @@
+flag = b"CO3083{sometime_you_dont_need_to_solve_all_DLPs_in_Pohlig_Hellman_attack}"
